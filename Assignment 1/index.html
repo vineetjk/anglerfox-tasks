@@ -14,18 +14,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9goAyQdvtbbddRIe5wDxQs1_bcg_sEFE&libraries=places"></script>
+
     <title>Assignment 1</title>
 </head>
 
 <body>
 
     <div class="container">
-        <input id="cityname" type="text"> <br>
-        <button onclick="search();"> search </button>
 
-        <div id="displayhere">
+        <h1 style="text-align: center; margin-top: 30px; font-weight: bold; color: white;">
+           Search Weather 
+        </h1>
+        <div class="location">
+
+            <div class="row">
+                <div class="col-9">
+                    <input class="form-control" id="cityname" type="text"> 
+
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary" onclick="search();">  Search  </button>
+
+                </div>
+            </div>
+        </div>
+       
+
+
+        <div id="displayhere" class="dis">
 
         </div>
+        <!-- <div class="card item-card center">
+            <img class="card-img-top"
+                src="http://openweathermap.org/img/wn/${
+                    weather[0]["icon"]
+                    }@2x.png"
+                alt="" style="width:100%; height: 200px; object-fit: contain;">
+            <div class="card-body">
+                <h4 class="card-title">
+                   <span style="font-weight: bolder;font-size: larger; color: rgba(0, 0, 0, 0.63);"> ${weather[0]["main"]} </span>  <br>
+                    ${name} <span style="color: rgba(0, 0, 0, 0.616);"> (${sys.country}) </span> <span> <img src="https://www.countryflags.io/IN/flat/64.png"></span> </h4>
+                <p class="card-text"> Temp:
+                <span class="temp"> ${main.temp}°C </span>  <br>
+                <div class="otherdata">
+
+                
+                Humidity : <b> ${main.humidity}%</b> <br>
+                Pressure : <b> ${main.pressure} mbar</b><br>
+                Max Temperature : <b>${main.temp_max}°C</b> <br>
+                Min Temperature :<b> ${main.temp_min}°C</b> <br>
+            </div>
+                </p>
+            </div>
+        </div> -->
+
+
     </div>
     
 
@@ -39,7 +83,10 @@
 
 
 
-
+    <script>
+        var input = document.getElementById('cityname');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+      </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
