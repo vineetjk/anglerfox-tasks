@@ -1,0 +1,120 @@
+.row-header {
+  margin: 0px 0px;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #f9f8fd;
+  color: black; }
+
+
+body {
+  padding: 0px 0px 0px 0px;
+  z-index: 0; 
+  background: #f9f8fd;
+  position: relative; 
+
+}
+
+.navbar-light {
+  background-color: rgb(221, 223, 250); }
+
+
+.head{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+.head_dsc{
+  font-family: 'Comfortaa', cursive;
+  font-weight: lighter;
+}
+
+.topnav {
+  overflow: hidden;
+  font-family: 'Comfortaa', cursive;
+  font-weight: lighter;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 2px solid rgb(63, 2, 160);
+}
+
+.topnav  a.active {
+  border-bottom: 2px solid rgb(63, 2, 160);
+}
+.nav-item  a.active {
+  border-bottom: 2px solid rgb(63, 2, 160);
+}
+.item-card{
+  width: 330px;
+
+}
+
+.card{
+  font-family: 'Comfortaa', cursive;
+  border: 0px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+.card-title{
+  font-weight: bold;
+  font-size: medium;
+}
+.card-text{
+  font-weight: lighter;
+  font-size: small;
+}
+
+.btn{
+  border-radius: 0;
+  font-size: small;
+}
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: rgb(63, 2, 160) !important;
+}
+.btn-primary:hover{
+  color: rgb(63, 2, 160) !important;
+  background-color: white !important;
+}
+.btn-outline-primary{
+  color: rgb(63, 2, 160) !important;
+  border-color:rgb(63, 2, 160) !important ;
+
+}
+.btn-outline-primary:hover{
+  color: white !important;
+  background-color: rgb(63, 2, 160) !important ;
+  border-color:rgb(63, 2, 160) !important ;
+}
+
+.title{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
