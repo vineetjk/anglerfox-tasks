@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "build": "grunt",
+    "prepublish": "npm run build"
   },
   "author": "Vineet J Karni",
   "license": "ISC",
